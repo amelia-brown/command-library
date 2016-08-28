@@ -1,0 +1,14 @@
+<script id="commands">
+  <div class="commands-page-container">
+    <h3>All commands </h3>
+    <div class="commands-container">
+      {{#each command}}
+        {{command}}
+      {{/each}}
+    </div>
+  </div>
+</script>
+
+var source = $('#commands').html;
+export default source;
+

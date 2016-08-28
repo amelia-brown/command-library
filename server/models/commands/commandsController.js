@@ -4,7 +4,7 @@ var Command = require('./commandsModel');
 var findCommand = Q.nbind(Command.findOne, Command);
 var createCommand = Q.nbind(Command.create, Command);
 var findAllCommands = Q.nbind(Command.find, Command);
-var findByUserId = Q.nbind(command.find, Command);
+var findByUserId = Q.nbind(Command.find, Command);
 
 module.exports = {
   allCommands: function(req, res, next) {

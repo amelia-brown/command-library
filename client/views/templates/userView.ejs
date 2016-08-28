@@ -1,0 +1,17 @@
+<script id="userView">
+  <div class="user-page-container">
+    <h3>{{username}}</h3>
+    <div class="user-container">
+      {{>user}}
+      <div class="user-commands">
+        {{#each commands}}
+          {{>command}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</script>
+
+var source = $('user');
+
+export default source;

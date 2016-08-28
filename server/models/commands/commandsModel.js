@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var User = require('./users');
+var User = require('../users/usersModel');
 
 var CommandSchema = mongoose.Schema({
   command: {
@@ -11,8 +11,8 @@ var CommandSchema = mongoose.Schema({
     required: true
   },
   likes: {
-    type: Integer,
-  }
+    type: Number,
+  },
   userId: {
     type: String,
     ref: User
